@@ -1,0 +1,6 @@
+console.log(RegExp.escape("The Quick Brown Fox")); // "The Quick Brown Fox"
+console.log(RegExp.escape("Buy it. use it. break it. fix it.")); // "Buy it\. use it\. break it\. fix it\."
+console.log(RegExp.escape("(*.*)")); // "\(\*\.\*\)"
+console.log(RegExp.escape("｡^･ｪ･^｡")); // "｡\^･ｪ･\^｡"
+console.log(RegExp.escape("😊 *_* +_+ ... 👍")); // "😊 \*_\* \+_\+ \.\.\. 👍"
+console.log(RegExp.escape("\\d \\D (?:)")); // " \\d \\D \(\?\:\)"
