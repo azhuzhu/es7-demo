@@ -1,3 +1,4 @@
+// run it in chrome
 // Object.observe()
 // Object.observe(obj, callback[, acceptList])
 var obj = { name: 'Will', age: 18 };
