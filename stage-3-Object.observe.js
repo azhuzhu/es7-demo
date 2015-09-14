@@ -1,7 +1,7 @@
 // run it in chrome
 // Object.observe()
 // Object.observe(obj, callback[, acceptList])
-var obj = { name: 'Will', age: 18 };
+var obj = { name: 'Will', age: 18, addr : {home: 'home', work: 'work'}};
 Object.observe(obj, function(changes) {
 	changes.forEach(function(change, i){
  	console.log('what property changed? ' + change.name);
@@ -13,6 +13,7 @@ Object.observe(obj, function(changes) {
 
 obj.name = 'June';
 obj.age = '21';
+obj.addr.home = 'new house'; // no response
 setTimeout(function() {obj.corp = 'Red Hat';}, 3000);
 
 
